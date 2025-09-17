@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Innovation Cameroon (IC)</title>
+  <meta name="description" content="Contact Innovation Cameroon: email, phone, address, and social links." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./">
+        <img class="brand-logo" src="assets/images/IC_Logo.png" alt="Innovation Cameroon logo" />
+        <span class="brand-name">Innovation Cameroon</span>
+      </a>
+      <nav>
+        <button class="hamburger" aria-label="Toggle navigation">☰</button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="mentorship.html">Mentorship</a>
+          <a class="active" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 48px 0;">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="lead">We’d love to hear from you. Reach out for partnerships, mentorship, or general inquiries.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact-grid">
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="grid">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="How can we help?" />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+
+        <aside>
+          <div class="card">
+            <h3>Contact Details</h3>
+            <p class="muted">
+              Email: <a href="innovcmr@gmail.com">nnovcmr@gmail.com</a><br/>
+              Phone: <a href="tel:+237600000000">+237 651 408 846</a><br/>
+              Address: Bamenda, Cameroon
+            </p>
+          </div>
+          <div class="map-embed" style="margin-top: 16px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8029692.790768586!2d8.5!3d3.848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1061125b25b0178b%3A0x1f1b3b1f2af75e2!2sCameroon!5e0!3m2!1sen!2s!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Innovation Cameroon</span>
+      <div class="social" aria-label="Social links">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+

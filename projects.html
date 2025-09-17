@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Innovation Cameroon (IC)</title>
+  <meta name="description" content="Explore projects by Innovation Cameroon: community-driven, impactful technology solutions." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./">
+        <img class="brand-logo" src="assets/images/IC_Logo.png" alt="Innovation Cameroon logo" />
+        <span class="brand-name">Innovation Cameroon</span>
+      </a>
+      <nav>
+        <button class="hamburger" aria-label="Toggle navigation">☰</button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="mentorship.html">Mentorship</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 48px 0;">
+      <div class="container">
+        <h1>Our Projects</h1>
+        <p class="lead">A selection of community-focused initiatives showcasing practical skills and measurable impact.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="project-grid">
+          <article class="project-item">
+            <a href="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop" data-lightbox>
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop" alt="Team collaborating on data dashboard" />
+            </a>
+            <div class="p-body">
+              <span class="tag">Data</span>
+              <h3>Community Health Dashboard</h3>
+              <p class="muted">An interactive dashboard to visualize health indicators for local clinics.</p>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <a href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" data-lightbox>
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="Developer workstation with code on screen" />
+            </a>
+            <div class="p-body">
+              <span class="tag">Web</span>
+              <h3>Local SME Marketplace</h3>
+              <p class="muted">A responsive web platform enabling small businesses to reach wider audiences.</p>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <a href="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop" data-lightbox>
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Mobile phone with app UI" />
+            </a>
+            <div class="p-body">
+              <span class="tag">Mobile</span>
+              <h3>Community Reporting App</h3>
+              <p class="muted">A mobile app to report local issues and coordinate responses with municipal teams.</p>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <a href="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1600&auto=format&fit=crop" data-lightbox>
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop" alt="Students in a workshop" />
+            </a>
+            <div class="p-body">
+              <span class="tag">Training</span>
+              <h3>Tech Skills Bootcamp</h3>
+              <p class="muted">Practical training series covering web fundamentals and project-based learning.</p>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <a href="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?q=80&w=1600&auto=format&fit=crop" data-lightbox>
+              <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?q=80&w=800&auto=format&fit=crop" alt="Team presenting a prototype" />
+            </a>
+            <div class="p-body">
+              <span class="tag">Innovation</span>
+              <h3>Smart Agriculture Prototype</h3>
+              <p class="muted">IoT-enabled monitoring for smallholder farms to optimize water usage.</p>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <a href="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1600&auto=format&fit=crop" data-lightbox>
+              <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop" alt="Developers planning on a whiteboard" />
+            </a>
+            <div class="p-body">
+              <span class="tag">Partnership</span>
+              <h3>University Collaboration</h3>
+              <p class="muted">Project-based curriculum alignment with local universities.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Innovation Cameroon</span>
+      <div class="social" aria-label="Social links">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" aria-label="Close">Close ✕</button>
+    <div class="lightbox-content"><img alt="Expanded project image" /></div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
