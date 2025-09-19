@@ -309,7 +309,7 @@ footer.site-footer { background: #0a1830; color: #cbd5e1; padding: 26px 0; margi
 
 .carousel-container img {
   width: 100%;
-  height: 360px;
+  height: 400px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 12px;
