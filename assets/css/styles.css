@@ -86,7 +86,7 @@ header.site-header {
 
 /* Hero */
 .hero {
-  background: radial-gradient(1200px 600px at 90% -10%, rgba(22,160,133,0.25), transparent),
+  background: radial-gradient(1200px 600px at 90% -10%, rgba(189, 192, 191, 0.25), transparent),
               linear-gradient(180deg, var(--color-navy), var(--color-navy-600));
   color: var(--color-white);
   padding: 80px 0 60px;
