@@ -385,3 +385,109 @@ footer.site-footer { background: #0a1830; color: #cbd5e1; padding: 26px 0; margi
 }
 
 
+
+
+/* project section css */
+.project-card {
+  border: none;
+  overflow: visible;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  border-radius: 12px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(29, 48, 72, 0.12);
+}
+
+/* Make image area clipped but badge outside */
+.project-card .card-img-top {
+  overflow: visible;
+  padding: 0;
+}
+
+/* IC logo badge (white circular background with logo centered) */
+.ic-badge {
+  position: absolute;
+  right: 14px;
+  bottom: -22px;
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(31, 47, 63, 0.12);
+  border: 3px solid rgba(255,255,255,0.95);
+}
+
+/* Ensure logo image fits nicely inside the badge */
+.ic-badge img {
+  max-width: 60%;
+  max-height: 60%;
+  display: block;
+}
+
+/* card body spacing */
+.card-body {
+  padding-top: 28px; /* give space for the overlapping badge */
+  padding-bottom: 1.2rem;
+}
+
+/* Tag styles (small badge that sits above title) */
+.tag {
+  font-size: 0.72rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Smaller text styling */
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  font-size: 1.05rem;
+}
+
+.card-text.small {
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+/* Responsive tweaks */
+@media (max-width: 575.98px) {
+  .ic-badge {
+    width: 60px;
+    height: 60px;
+    bottom: -18px;
+    right: 12px;
+  }
+
+  .card-body {
+    padding-top: 22px;
+  }
+}
+.card-img-top a:focus {
+  outline: 3px solid rgba(13,110,253,0.15);
+  outline-offset: 6px;
+  border-radius: 8px;
+}
+.card-img-top a:focus img {
+  border-radius: 8px;
+}
+
+/* Remove underline from nav links */
+.nav a {
+  text-decoration: none;
+  color: inherit; 
+  transition: color 0.2s ease;
+}
+
+
+/* Active link style */
+.nav a.active {
+  font-weight: 600;
+  color: #2c7ffc; /* highlight active page */
+}
